@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next-Gen Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Next-Gen Resume Builder</h1>
+        <!-- Resume Form -->
+        <form id="resume-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="work-experience">Work Experience:</label>
+                <textarea id="work-experience" name="work-experience" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea>
+            </div>
+            <button  type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Resume Output Section -->
+        <div class="resume" id="resume-output">
+            <h2>Generated Resume</h2>
+            <p><strong>Name:</strong> <span id="output-name" class="editable-field"></span></p>
+            <p><strong>Email:</strong> <span id="output-email" class="editable-field"></span></p>
+            <p><strong>Education:</strong> <span id="output-education" class="editable-field"></span></p>
+            <p><strong>Work Experience:</strong> <span id="output-work-experience" class="editable-field"></span></p>
+            <p><strong>Skills:</strong> <span id="output-skills" class="editable-field"></span></p>
+        </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
